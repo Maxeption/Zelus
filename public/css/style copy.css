@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+h1, span, p, a {
+    text-shadow: 2px 2px 6px #111111;
+  }
+
+
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111111;
+  padding: 5px 100px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.nav-bar .nav-logo {
+  color: crimson;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.nav-bar .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar .nav-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar .nav-menu ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+.nav-bar .nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.nav-bar .nav-menu ul li a:hover {
+  background-color: crimson;
+}
+.nav-bar .nav-menu ul li .btn-login {
+  padding: 0 25px;
+  background-color: crimson;
+  border: 1px solid crimson;
+  font-size: 1.1em;
+  font-weight: 800;
+}
+.nav-bar .nav-menu ul li .btn-login:hover {
+  background-color: transparent;
+  color: crimson;
+}
+.nav-bar .nav-menu ul li .btn-reg {
+  padding: 0 25px;
+  background-color: transparent;
+  border: 1px solid crimson;
+  font-size: 1.1em;
+  font-weight: 800;
+  color: crimson;
+}
+.nav-bar .nav-menu ul li .btn-reg:hover {
+  background-color: crimson;
+  color: black;
+}
+.nav-bar .nav-menu ul li .contact {
+  color: crimson;
+  font-size: 1.5em;
+}
+.nav-bar .nav-menu ul li a:last-child:hover {
+  background-color: transparent;
+}
+
+.cont {
+  height: 650px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cont .about-text {
+  background-color: #111111;
+  height: 100%;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 50px;
+  color: #fff;
+}
+.cont .about-text .title {
+  font-size: 2.5em;
+  font-weight: 800;
+}
+.cont .about-text .desc {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+}
+.cont .about-img {
+  width: 67%;
+  height: 100%;
+  background-image: url("../assets/saint-14-bg-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#posts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 100px;
+  background-color: #111111;
+}
+#posts .post {
+  width: 500px;
+  margin: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 0;
+}
+#posts .post .post-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  z-index: -1;
+}
+#posts .post .post-img .filter {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.568), transparent);
+  position: absolute;
+}
+#posts .post .post-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#posts .post .post-cont {
+  padding: 20px;
+  z-index: 1;
+}
+#posts .post .post-cont .post_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#posts .post .post-cont .post_top .post-date {
+  font-size: 1em;
+  padding-right: 35px;
+  display: flex;
+  color: crimson;
+  font-weight: 400;
+}
+#posts .post .post-cont .post_top .post_top_right {
+  display: flex;
+}
+#posts .post .post-cont .post_top .post_top_right .post_game {
+  display: flex;
+}
+#posts .post .post-cont .post_top .post-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+    color: crimson;
+}
+#posts .post .post-cont .post-desc {
+  font-size: 1em;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.5;
+  color: #fff;
+}
+#posts .post .post-cont .post-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */
+
+.games{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.game{
+    margin: 5px;
+    color: crimson;
+}
+.game a{
+    text-decoration: none;
+    color: crimson;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cont-games{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.posts-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.posts-container .post {
+    flex: 0 0 calc(33.33% - 20px); /* 33.33% for 3 items per row, 20px for some margin */
+    margin: 10px; /* Adjust as needed */
+}
+
+.user{
+    border: #ffffff 1px solid;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.user:hover{
+    background-color: crimson;
+    color: #111111;
+    border: #111111 1px solid;
+
+}

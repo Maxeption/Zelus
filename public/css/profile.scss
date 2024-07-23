@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #111111 !important;
+}
+
+
+
+#profile-settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    .cont{
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+
+        .sidebar{
+            height: 100vh;
+            border-top: 1px solid #fff;
+            background-color: #111111;
+            .sidebar-list{
+                padding: 10px;
+                .sidebar-item{
+                    list-style: none;
+                    padding: 10px;
+                    border-bottom: 1px solid #fff;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background-color: crimson;
+                    }
+                }
+                .active{
+                    color: crimson;
+                }
+            }
+        }
+        .profile-settings{
+            border-top: 1px solid #fff;
+            height: 100vh;
+
+            .profile-settings-header{
+                padding: 10px;
+                border-bottom: 1px solid #fff;
+                color: crimson;
+                font-weight: 800;
+                font-size: 1.5em;
+                text-align: center;
+            }
+            .profile-settings-content{
+                padding: 10px 100px;
+
+                .form{
+                    border: 1px solid crimson;
+                    border-radius: 10px;
+                    padding: 50px;
+                    background-color: crimson;
+                }
+            }
+            .profile-settings-content-item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 0;
+                .inputs{
+                    width: 100%;
+                    padding: 10px;
+                    margin: 10px 0;
+                    border-radius: 5px;
+                    background-color: rgba(0, 0, 0, 0.527);
+
+                    &:focus{
+                        outline: none;
+                    }
+                    &::placeholder{
+                        color: #fff;
+                    }
+                }
+                .text-area{
+                    height: 100px;
+                }
+
+                label{
+                    font-size: 1.2em;
+                    font-weight: 800;
+                    width: 450px;
+                    color: #cbbaba;
+                }
+                button{
+                    padding: 10px 20px;
+                    background-color: crimson;
+                    color: #fff;
+                    border: 1px solid crimson;
+                    border-radius: 5px;
+                    width: 150px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background-color: transparent;
+                        color: crimson;
+                        border: 1px solid crimson;
+                    }
+                }
+            }
+            .profile-settings-top{
+                padding: 10px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .profile-settings-avatar{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    input{
+                        position: absolute;
+                        height: 100%;
+                        opacity: 0;
+                        width: 100%;
+                    }
+                    .upload{
+                        position: absolute;
+                        background-color: crimson;
+                        height: 100%;
+                        width: 100%;
+                        padding: 5px;
+                        border-radius: 5px;
+                        opacity: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        z-index: 1000;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        &:hover{
+                            opacity: 0.5;
+                        }
+                    }
+                }
+                .profile-settings-score{
+                    padding: 10px;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: crimson;
+                    .score{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        border-bottom: 1px solid #fff;
+                        width: 100%;
+                        &:last-child{
+                            border-right: none;
+                        }
+
+                        .score-title{
+                            font-size: 1.5em;
+                            font-weight: 800;
+                            color: #fff;
+                        }
+
+                        .score-number{
+                            font-size: 1.5em;
+                            font-weight: 800;
+                            color: gold;
+                        }
+                    }
+                    .stars{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .star-cont{
+                            position: relative;
+                            .rating-star{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 20px;
+                                height: 20px;
+                                opacity: 0;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .star{
+                            width: 20px;
+                            height: 20px;
+                            margin: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

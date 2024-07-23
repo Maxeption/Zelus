@@ -1,0 +1,94 @@
+
+
+$steam1: #00adee;
+$steam2: #000000;
+$epic: #313131;
+$xbox: #107c10;
+$riot: #d9012a;
+$ps1: #003087;
+$ps2: #000000;
+$discord: #7289da;
+$bungie: #00a3e3;
+
+
+
+#connections{
+
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 30px;
+
+    .platform_card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        width: 260px;
+        height: 155px;
+        padding: 15px;
+        border-radius: 15px;
+
+        .form-group{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-direction: column;
+
+            label{
+                font-weight: 800;
+                font-size: 1.3em;
+                text-align: center;
+            }
+
+            .inputs{
+                display: flex;
+                color: #000000;
+            }
+
+            .platform-logo{
+                width: fit-content;
+                height: 20px;
+                font-size: 1.1em;
+            }
+        }
+        button{
+            width: 20%;
+            border: none;
+            border-radius: 20px;
+            background: #fff;
+            color: #000;
+            cursor: pointer;
+        }
+    }
+    .steam{
+        background: linear-gradient(15deg, $steam1, $steam2);
+    }
+
+    .xbox{
+        background-color: $xbox;
+    }
+
+    .epic{
+        background-color: $epic;
+    }
+
+    .riot{
+        background-color: $riot;
+    }
+
+    .PSN{
+        background: linear-gradient(15deg, $ps1, $ps2);
+    }
+
+    .discord{
+        background-color: $discord;
+    }
+
+    .bungie{
+        background-color: $bungie;
+    }
+}

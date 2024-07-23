@@ -1,0 +1,88 @@
+.profile-settings-all {
+  display: flex;
+}
+.profile-settings-all .profile-settings-content {
+  width: 900px;
+  padding: 10px 0px 10px 50px !important;
+}
+.profile-settings-all .profile-settings-games {
+  border: 1px solid crimson;
+  border-radius: 10px;
+  padding: 28px;
+  background-color: #dc143c;
+  margin: 10px 100px 10px 50px;
+  width: 400px;
+}
+.profile-settings-all .profile-settings-games h2 {
+  color: white;
+  text-align: center;
+}
+.profile-settings-all .profile-settings-games .profile-settings-games-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-settings-all .profile-settings-games .profile-settings-games-list .profile-settings-games-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #68091c;
+  border: 2px solid #dc143c;
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+}
+.profile-settings-all .profile-settings-games .profile-settings-games-list .profile-settings-games-item:hover {
+  background-color: #dc143c;
+  border: 2px solid #68091c;
+  border-radius: 10px;
+}
+.profile-settings-all .profile-settings-games .profile-settings-games-list .profile-settings-games-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.profile-settings-all .profile-settings-games .add-game-btn {
+  background-color: #68091c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #dc143c;
+  transition: all 0.3s ease-in-out;
+}
+.profile-settings-all .profile-settings-games .add-game-btn:hover {
+  background-color: #dc143c;
+  border: 2px solid #68091c;
+  border-radius: 10px;
+}
+.profile-settings-all .profile-settings-games .add-game-btns form {
+  display: flex;
+  justify-content: center;
+}
+.profile-settings-all .profile-settings-games .add-game-btns form select {
+  width: 100%;
+}
+.profile-settings-all .profile-settings-games .add-game-btns form button {
+  background-color: #68091c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #dc143c;
+  transition: all 0.3s ease-in-out;
+}
+.profile-settings-all .profile-settings-games .add-game-btns form button:hover {
+  background-color: #dc143c;
+  border: 2px solid #68091c;
+  border-radius: 10px;
+}/*# sourceMappingURL=profile-games.css.map */

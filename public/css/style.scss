@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+  }
+
+
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111111;
+    padding: 5px 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: auto;
+            height: 38px;
+        }
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+          list-style: none;
+          margin-left: 20px;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background-color: crimson;
+            }
+          }
+
+          .btn-login {
+            padding: 0 25px;
+            background-color: crimson;
+            border: 1px solid crimson;
+            font-size: 1.1em;
+            font-weight: 800;
+
+            &:hover {
+              background-color: transparent;
+              color: crimson;
+            }
+          }
+
+          .btn-reg {
+            padding: 0 25px;
+            background-color: transparent;
+            border: 1px solid crimson;
+            font-size: 1.1em;
+            font-weight: 800;
+            color: crimson;
+
+            &:hover {
+              background-color: crimson;
+              color: black;
+            }
+          }
+
+          .contact {
+            color: crimson;
+            font-size: 1.5em;
+          }
+
+          a:last-child:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .cont {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .active{
+        color: crimson;
+        font-weight: 800;
+    }
+
+    .about-text {
+      background-color: #111111;
+      height: 100%;
+      width: 33%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding: 50px;
+      color: #fff;
+      background-image: url("../assets/darker-zeus-bg.png");
+      background-size: cover;
+
+      .title {
+        font-size: 2.5em;
+        font-weight: 800;
+        z-index: 1000;
+      }
+
+      .filter{
+        width: 100%;
+        height: 71%;
+        border-radius: 10px;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.568), transparent);
+    }
+
+      .desc {
+        font-size: 1.5em;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.5;
+        z-index: 1000;
+      }
+    }
+
+    .about-img {
+      width: 67%;
+      height: 100%;
+      background-image: url("../assets/saint-14-bg-bg.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1000;
+    }
+  }
+
+  #posts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+    background-color: #111111;
+
+    .post {
+      width: 500px;
+      margin: 20px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      z-index: 0;
+
+      .post-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        position: absolute;
+        z-index: -1;
+
+        .filter {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0.568), transparent);
+          position: absolute;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          -o-object-fit: cover;
+          object-fit: cover;
+          -o-object-position: center;
+          object-position: center;
+        }
+      }
+
+      .post-cont {
+        padding: 20px;
+        z-index: 1;
+
+        .post_top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 20px;
+
+          .post-date {
+            font-size: 1em;
+            padding-right: 35px;
+            display: flex;
+            color: crimson;
+            font-weight: 400;
+          }
+
+          .post_top_right {
+            display: flex;
+
+            .post_game {
+              display: flex;
+            }
+          }
+
+          .post-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: crimson;
+          }
+        }
+
+        .post-desc {
+          font-size: 1em;
+          font-weight: 500;
+          color: #555;
+          line-height: 1.5;
+          color: #fff;
+        }
+
+        .post-bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  /*# sourceMappingURL=style.css.map */
+
+  .games {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 150px;
+  }
+
+  .game {
+    margin: 10px;
+    color: crimson;
+
+    a {
+      text-decoration: none;
+      color: crimson;
+      font-size: 1.2em;
+      font-weight: 600;
+      padding: 10px 20px;
+      border: 1px solid crimson;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      height: 250px;
+      width: 170px;
+      position: relative;
+
+        .game-info-card{
+            position: absolute;
+            width: 100%;
+            height: 0;
+            bottom: 0;
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+            right: 0;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+
+            .game-info-card{
+                background-color: crimson;
+                filter: opacity(0.8);
+                color: white;
+                height: 10%;
+            }
+        }
+
+
+    }
+  }
+
+  .cont-games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .title{
+        margin: 20px;
+        font-size: 2em;
+        font-weight: 800;
+        text-shadow: 1px 1px 3px;
+        color: crimson;
+    }
+  }
+
+  .posts-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: crimson;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
+  .posts-container .post {
+    flex: 0 0 calc(33.33% - 20px);
+
+    /* 33.33% for 3 items per row, 20px for some margin */
+    margin: 10px;
+
+    /* Adjust as needed */
+  }
+
+  .user {
+    border: #ffffff 1px solid !important;
+    padding: 10px !important;
+    border-radius: 50px !important;
+    transition: all 0.3s ease !important;
+
+    &:hover {
+      background-color: crimson !important;
+      border: rgb(46, 3, 11) 1px solid !important;
+    }
+  }

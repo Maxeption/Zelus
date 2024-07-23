@@ -1,0 +1,113 @@
+.nav-search{
+
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+    background-color: #f8f9fa !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+
+    .search_input:focus{
+        outline: none !important;
+
+
+    }
+}
+
+/* Add this to your CSS file */
+#search {
+    padding: 20px !important;
+}
+
+.cont-search {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.search-title {
+    font-size: 2em !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+    color: #333 !important;
+    font-weight: 700 !important;
+}
+
+.search-results {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    justify-content: center !important;
+}
+
+.user-div {
+    flex: 1 1 calc(33.333% - 20px);
+    border-radius: 8px ;
+    overflow: hidden ;
+    transition: transform 0.3s ;
+    background-color: #fff ;
+}
+
+.user-div:hover {
+    transform: translateY(-5px) ;
+}
+
+.user-card {
+    display: block !important;
+    text-decoration: none !important;
+    background-color: crimson !important;
+    width: 390px;
+}
+
+.user-image {
+    width: 100% !important;
+    height: 200px !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.user-info-card {
+    padding: 15px !important;
+}
+
+.username {
+    font-size: 1.5em !important;
+    margin: 0 !important;
+    color: #333 !important;
+    font-weight: 800 !important;
+}
+
+.nbs-posts {
+    font-size: 1em !important;
+    color: #666 !important;
+    margin-top: 10px !important;
+    font-weight: 700 !important;
+}
+
+.favorite-games{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    margin-top: 10px !important;
+    justify-content: center !important;
+;
+    .fav_user_game{
+        width: 150px;
+        height: fit-content;
+
+        img{
+            height: 200px;
+            width: 150px;
+            object-fit: cover;
+        }
+
+        p{
+            font-size: 1em;
+            font-weight: 700;
+            margin-top: 10px;
+            text-wrap: wrap;
+            text-align: center
+        }
+    }
+}

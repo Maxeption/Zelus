@@ -1,0 +1,69 @@
+#connections {
+  padding: 50px 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+#connections .platform_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 260px;
+  height: 155px;
+  padding: 15px;
+  border-radius: 15px;
+}
+#connections .platform_card .form-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+#connections .platform_card .form-group label {
+  font-weight: 800;
+  font-size: 1.3em;
+  text-align: center;
+}
+#connections .platform_card .form-group .inputs {
+  display: flex;
+  color: #000000;
+}
+#connections .platform_card .form-group .platform-logo {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 20px;
+  font-size: 1.1em;
+}
+#connections .platform_card button {
+  width: 20%;
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+#connections .steam {
+  background: linear-gradient(15deg, #00adee, #000000);
+}
+#connections .xbox {
+  background-color: #107c10;
+}
+#connections .epic {
+  background-color: #313131;
+}
+#connections .riot {
+  background-color: #d9012a;
+}
+#connections .PSN {
+  background: linear-gradient(15deg, #003087, #000000);
+}
+#connections .discord {
+  background-color: #7289da;
+}
+#connections .bungie {
+  background-color: #00a3e3;
+}/*# sourceMappingURL=connections.css.map */
